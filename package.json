@@ -13,7 +13,8 @@
     "fonts": "fontmin client/assets/fonts/**/* client/assets/.fonts/",
     "test:unit": "node test/scripts/unit-nuxt-configs.js",
     "test:e2e": "node test/scripts/e2e-nuxt-configs.js",
-    "test": "npm run test:unit && npm run test:e2e"
+    "test": "npm run test:unit && npm run test:e2e",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/toast": "^3.0.2",
@@ -34,6 +35,7 @@
     "nuxt-class-component": "^1.2.1",
     "nuxt-i18n": "^5.4.4",
     "nuxt-sass-resources-loader": "^2.0.5",
+    "push-dir": "^0.4.1",
     "reflect-metadata": "^0.1.12",
     "v-click-outside": "^2.0.2",
     "vue-property-decorator": "^7.2.0",
